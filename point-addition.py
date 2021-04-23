@@ -30,7 +30,7 @@ def pointSum(p, q):
                 slope = ((q[1]-p[1])/(q[0]-p[0]))
 
    
-    slope_fraction = (frac(slope).limit_denominator(1000)).as_integer_ratio()
+    slope_fraction = (frac(slope).limit_denominator(10000)).as_integer_ratio()
     # print('SLOPE FRACTION: ', slope_fraction)
     slope = ((slope_fraction[0]) * (pow(slope_fraction[1], modulus-2, modulus))) % modulus
 
@@ -57,21 +57,21 @@ def doubleAndAdd(p, n):
 
 
 
-P = (2110, 543)
+P = (2, 2575)
 print("-----DoubleAndAdd-----")
 
-point = doubleAndAdd(P, 1943)
+point = doubleAndAdd(P, 875)
 print('Point: ', point)
 
 # newP = (24, 14)
 # times = 19
 
 # i = 1
-# ppp = (2597, 2416)
-# while i<=2671:
+# ppp = (1432, 667)
+# while i<=2761:
 #     curPoint = doubleAndAdd(ppp, i)
 #     print(i, curPoint)
-#     if curPoint[0] == 689 and curPoint[1] == 2348:
+#     if curPoint[0] == 2:
 #         print(i)
 #         break
 #     i+=1
