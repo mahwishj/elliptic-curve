@@ -57,10 +57,10 @@ def doubleAndAdd(p, n):
 
 
 
-P = (2, 2575)
+P = (2110, 543)
 print("-----DoubleAndAdd-----")
 
-point = doubleAndAdd(P, 875)
+point = doubleAndAdd(P, 1943)
 print('Point: ', point)
 
 # newP = (24, 14)
